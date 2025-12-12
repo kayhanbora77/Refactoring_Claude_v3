@@ -13,8 +13,8 @@ class Config:
     DATABASE_PATH = DATABASE_DIR / DATABASE_NAME
 
     # Table names
-    SOURCE_TABLE = "my_db.main.TBO3_2022"    
-    TARGET_TABLE = "my_db.main.TBO3_2022_TARGET"    
+    SOURCE_TABLE = "my_db.main.TBO3_2024"    
+    TARGET_TABLE = "my_db.main.TBO3_2024_TARGET"    
 
     # Column prefixes
     FLIGHT_NUMBER_PREFIX = "FlightNumber"

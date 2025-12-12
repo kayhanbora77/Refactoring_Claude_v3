@@ -136,7 +136,6 @@ def process_all_flights_optimized(
  #           total, processed, successes, errors)
     return ProcessingSummary(total=total, processed=processed, successes=successes, errors=errors)
 
-
 def main() -> NoReturn:
     setup_logging(log_level="INFO")
     lg = logging.getLogger(__name__)
@@ -146,7 +145,7 @@ def main() -> NoReturn:
 
     try:
         # Use optimized version with configurable batch size
-        summary = process_all_flights_optimized(repo, processor, logger=lg, batch_size=200)
+        summary = process_all_flights_optimized(repo, processor, logger=lg, batch_size=100000)
         
         if summary.total == 0:
             code = 0
